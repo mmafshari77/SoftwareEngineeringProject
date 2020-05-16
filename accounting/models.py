@@ -15,4 +15,7 @@ class Transaction(models.Model):
     owner_equity = models.FloatField()
     image = models.ImageField()
 
+    def __str__(self):
+        return self.description
+
 
